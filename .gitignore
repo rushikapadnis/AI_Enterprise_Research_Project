@@ -1,0 +1,25 @@
+#Python
+__pycache__/
+*.py[cod]
+
+#Virtual Environment
+venv/
+.venv/
+
+#Enviornment variable
+.env
+.env.*
+
+#IDE
+.vscode/
+
+#Node
+node_modules/
+.next/
+
+#Logs
+*.log
+
+#DS
+.DS_Store
+Thumbs.db
