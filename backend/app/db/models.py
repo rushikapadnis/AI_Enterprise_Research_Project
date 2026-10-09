@@ -75,9 +75,9 @@ class ResearchReport(Base):
         nullable=True
     )
 
-    user_id: Mapped[int] = mapped_column(
+    user_id: Mapped[int| None] = mapped_column(
         ForeignKey("users.id"),
-        nullable=False
+        nullable=True
     )
 
     created_at: Mapped[datetime] = mapped_column(
@@ -144,7 +144,7 @@ class AgentRun(Base):
         nullable=False
     )
 
-    user_id: Mapped[int | None] = mapped_column(
+    user_id: Mapped[int| None] = mapped_column(
         ForeignKey("users.id"),
         nullable=True
     )

@@ -22,7 +22,7 @@ class ResearchResponse(BaseModel):
     id: int
     company_name: str
     report_content: str
-    user_id: int
+    user_id: int | None = None
     created_at: datetime
     sources: list[SourceResponse] = []
 

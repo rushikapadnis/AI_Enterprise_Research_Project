@@ -1,4 +1,5 @@
 from langgraph.graph import END, START, StateGraph
+from app.services.web_search import WebSearchService
 
 from app.agent.nodes import (
     collect_company,

@@ -5,7 +5,7 @@ from app.agent.state import ResearchState
 
 from app.services.company_data import CompanyDataService
 from app.services.company_resolver import CompanyResolver
-from app.services.news_service import NewsService
+from app.services.news_services import NewsService
 from app.services.web_search import WebSearchService
 from app.services.llm_service import LLMService
 
