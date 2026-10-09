@@ -1,6 +1,9 @@
 from datetime import datetime
 import json
 
+from app.api.auth import get_current_user
+from app.db.models import User
+
 from fastapi import (
     APIRouter,
     Depends,
@@ -34,6 +37,7 @@ router = APIRouter(
 async def create_research(
     request: ResearchRequest,
     db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user),
 ):
 
     company_name = request.company_name.strip()

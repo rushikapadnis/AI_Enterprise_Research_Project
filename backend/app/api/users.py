@@ -9,7 +9,7 @@ from app.schemas.user import (
     UserCreate,
     UserResponse,
 )
-#from app.services.auth_service import create_access_token
+from app.services.auth_service import create_access_token
 
 
 router = APIRouter(
