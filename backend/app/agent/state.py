@@ -1,4 +1,5 @@
 from typing import Any, TypedDict
+from app.services.web_search import WebSearchService
 
 
 class ResearchState(TypedDict, total=False):
